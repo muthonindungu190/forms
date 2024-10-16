@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1> </h1>
+    <p id="description">Please fill out this survey form</p>
+    <form id="survey-form">
+        <div>
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div>
+            <label for="email" id="email-label" >Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div>
+            <label for="age" id="number-label" >Age</label>
+            <input type="number" name="age" id="number" min="18"max="45" placeholder="Enter your age"required >
+        </div>
+        <div><label for="dropdown">Which career programme are you currently enrolled in?</label>
+            <select name="programme" id="dropdown"required>
+            <option value="">Select a programme</option>
+            <option value="Virtual Assistant">Virtual Assistant</option>
+            <option value="Professional Foundations">Professional Foundations</option>
+            <option value="AI Career Essentials">AI Career Essentials</option>
+            </select>
+        </div>
+<div>
+    <label>Would you reccommend this programmes to a friend?</label>
+    <div> <input type="radio" id="reccommend-yes" name="reccommend" value="yes" required>
+        <label for="reccommend-yes">Yes</label>
+    <div> <input type="radio" id="reccommend-no" name="reccommend" value="no" required>
+    <label for="reccommend-no">No</label>
+    </div>
+</div>
+<div>
+    <label>What do you enjoy most about the programmes?</label>
+    <div> <input type="checkbox" id="feature1" value="Learning Materials" name="feature" required>
+        <label for="feature1">Learning Materials</label>
+    </div>
+    <div> <input type="checkbox" id="feature2" value="Savannah" name="feature" required>
+        <label for="feature2">Savannah</label>
+    </div>
+    <div> <input type="checkbox" id="feature3" value="Learning Community" name="feature" required>
+        <label for="feature3">Learning Community</label>
+    </div>
+    <div> <input type="checkbox" id="feature4" value="Weekly Milestones" name="feature" required>
+        <label for="feature4">Weekly Milestones</label>
+    </div>
+</div>
+<div>
+    <label for="comments">Any suggestions or additional comments?</label>
+    <textarea name="comments" id="comments" placeholder="Enter your suggestions or additional comments here"></textarea>
+</div>
+<div>
+    <button type="submit" id="submit">Submit</button>
+</div>
+    </form>
+</body>
+</html>
